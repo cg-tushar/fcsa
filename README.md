@@ -22,8 +22,8 @@ This CLI tool helps you to set up a Flutter project with a clean architecture st
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/flutter-cli-generator.git
-    cd flutter-cli-generator
+    git clone https://github.com/cg-tushar/fcsa.git
+    cd fcsa
     ```
 
 2. **Compile the Dart CLI application:**
@@ -38,7 +38,7 @@ This CLI tool helps you to set up a Flutter project with a clean architecture st
    sudo mv fcsa /usr/local/bin/
     ```
 
-3. **Initialize a New Project:**
+3. **Initialize a New Project(any flutter project):**
 
    ```bash
    fcsa init

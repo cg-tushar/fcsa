@@ -10,8 +10,6 @@ void main(List<String> arguments) {
     ..addOption('feature', abbr: 'f', help: 'Feature name');
 
   var argResults = parser.parse(arguments);
-  print(argResults.command);
-  print(arguments);
 
   if (argResults.command?.name == 'init') {
     String projectName = argResults['name'] ?? 'flutter_project';

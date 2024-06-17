@@ -14,7 +14,7 @@ void createProjectStructure(String projectName) {
   ];
 
   final files = {
-    'lib/theme/app_theme.dart':''' 
+    'lib/theme/app_theme.dart': '''
     import 'package:flutter/material.dart';
 
 class AppTheme {
@@ -597,7 +597,7 @@ void updateServiceLocator(String featureName) {
   final lines = file.readAsLinesSync();
 
   final repositoryImpl = '''
-  sl.registerLazySingleton(() => ${featureName.capitalize()}RepositoryImpl());
+  sl.registerLazySingleton(() => ${featureName.capitalize()}RepositoryImpl(sl<DioNetworkService>()));
   ''';
   final useCase = '''
   sl.registerLazySingleton(() => ${featureName.capitalize()}UseCase(sl()));

@@ -1,6 +1,8 @@
 name: fcsa
 description: A sample command-line application.
 version: 1.0.0
+homepage: https://github.com/cg-tushar/fcsa
+repository: https://github.com/cg-tushar/fcsa.git
 # repository: https://github.com/my_org/my_repo
 
 environment:
@@ -10,6 +12,8 @@ environment:
 dependencies:
   args: ^2.5.0
   # path: ^1.8.0
+executables:
+  fcsa: bin/fcsa.dart
 
 dev_dependencies:
   lints: ^3.0.0

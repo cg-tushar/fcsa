@@ -15,9 +15,34 @@ This CLI tool helps you to set up a Flutter project with a clean architecture st
 
 ### Prerequisites
 
-- [Dart SDK](https://dart.dev/get-dart) installed on your machine.
+- Dart SDK
+- Flutter SDK
 
 ### Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/flutter-cli-generator.git
+    cd flutter-cli-generator
+    ```
+
+2. **Compile the Dart CLI application:**
+
+   Open your terminal and navigate to the directory containing the CLI source code. Then, run the following command to compile the Dart application:
+
+   ```bash
+   dart compile exe bin/fcsa.dart -o fcsa
+    ```
+
+   ```bash
+   sudo mv fcsa /usr/local/bin/
+    ```
+
+3. **Initialize a New Project(any flutter project):**
+
+   ```bash
+   fcsa init
+    ```
 
 
 ### Directory Structure
@@ -67,7 +92,7 @@ lib/
 ```
 1. **Adding new feature <feature_name>:**
 
-   ```sh
+   ```bash
    fcsa feature:<feature_name>
     ```
 
@@ -85,40 +110,6 @@ This Dart script is a simple command-line tool to generate a structured Flutter 
 - **Feature Addition**: Easily add new features to your existing project with necessary files and directories.
 - **Dependency Management**: Adds essential dependencies to the `pubspec.yaml` file.
 
-## Getting Started
-
-### Prerequisites
-
-- Dart SDK
-- Flutter SDK
-
-### Installation
-
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/flutter-cli-generator.git
-    cd flutter-cli-generator
-    ```
-
-2. **Compile the Dart CLI application:**
-
-   Open your terminal and navigate to the directory containing the CLI source code. Then, run the following command to compile the Dart application:
-
-   ```sh
-   dart compile exe bin/fcsa.dart -o fcsa
-    ```
-
-   ```sh
-   sudo mv fcsa /usr/local/bin/
-    ```
-
-3. **Initialize a New Project:**
-
-   ```sh
-   fcsa init
-    ```
-
-
 ### Usage
 
 Run the script with the following commands:
@@ -127,51 +118,14 @@ Run the script with the following commands:
 
 1. **Initialize a New Project:**
 
-   ```sh
+```sh
    fcsa init
     ```
 2. **Adding a New Feature:**
 
-   ```sh
+```sh
    fcsa feature:<feature_name>
-    ```
-
-## Project Structure
-
-The generated project structure will look like this:
-
-```
-lib/
-├── core/
-│   ├── apis/
-│   │   └── endpoints.dart
-│   ├── error/
-│   │   └── exceptions.dart
-│   ├── network/
-│   │   ├── network_service.dart
-│   │   ├── dio_network_service.dart
-│   │   ├── request_interceptor.dart
-│   │   └── response_interceptor.dart
-│   ├── storage/
-│   │   ├── base_storage.dart
-│   │   └── secure_storage_service.dart
-│   ├── utils/
-│   │   ├── logger_service.dart
-│   │   └── extensions.dart
-│   ├── bloc/
-│   │   └── base_bloc.dart
-│   ├── string_constants.dart
-│   ├── colors_constants.dart
-│   ├── asset_constants.dart
-│   └── config.dart
-├── features/
-│   └── (feature folders)
-├── theme/
-│   └── app_theme.dart
-├── widgets/
-├── service_locator.dart
-└── main.dart
-```
+   ```
 
 ### Detailed Explanation of Structure
 

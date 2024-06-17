@@ -178,7 +178,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For any inquiries, feel free to reach out at tushar.dubey@mileseducation.com.
+For any inquiries, feel free to reach out at dubey.tushar23@gmail.com.
 
 ---
 

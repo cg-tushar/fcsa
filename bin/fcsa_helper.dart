@@ -389,9 +389,9 @@ class MyApp extends StatelessWidget {
       dark: ThemeData.dark(useMaterial3: true),
       initial: AdaptiveThemeMode.light,
       builder: (theme, darkTheme) => MaterialApp(
-        title: 'Adaptive Theme Demo',
-        theme: theme,
-        darkTheme: darkTheme,
+        title: 'Adaptive',
+        // theme: theme,
+        // darkTheme: darkTheme,
         home: AuthPage(),
       ),
     )
@@ -519,7 +519,7 @@ class ${featureName.capitalize()}Initial extends ${featureName.capitalize()}Stat
 class ${featureName.capitalize()}Loading extends ${featureName.capitalize()}State {}
 
 class ${featureName.capitalize()}Loaded extends ${featureName.capitalize()}State {
-  final dynamic data; // Replace dynamic with your data type
+  final ${featureName.capitalize()}Model data; // Replace dynamic with your data type
 
   const ${featureName.capitalize()}Loaded(this.data);
 

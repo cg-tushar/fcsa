@@ -20,9 +20,11 @@ void main(List<String> arguments) {
     String featureName = arguments[0].split(':').last;
     addFeature(featureName);
   } else {
-    print('--------Invalid command--------');
+    print('-------------------------------------------------');
     print('fcsa init : To create a new project');
     print('fcsa feature:feature_name : To add a new feature');
+    print('-------------------------------------------------');
+
   }
 }
 

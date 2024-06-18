@@ -1,6 +1,6 @@
 name: fcsa
-description: A sample command-line application.
-version: 1.0.0
+description: Cli tool for clean archeteture with solid principles and bloc.
+version: 1.0.1
 homepage: https://github.com/cg-tushar/fcsa
 repository: https://github.com/cg-tushar/fcsa.git
 # repository: https://github.com/my_org/my_repo
@@ -11,9 +11,16 @@ environment:
 # Add regular dependencies here.
 dependencies:
   args: ^2.5.0
+  dio: ^5.4.3+1
+  flutter_secure_storage: ^5.0.2
+  get_it: ^7.2.0
+  flutter_bloc: ^7.3.3
+  equatable: ^2.0.3
+  adaptive_theme: ^3.6.0
+
   # path: ^1.8.0
 executables:
-  fcsa: bin/fcsa.dart
+  fcsa: fcsa
 
 dev_dependencies:
   lints: ^3.0.0
